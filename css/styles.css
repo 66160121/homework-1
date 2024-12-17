@@ -51,6 +51,8 @@ nav ul li a:hover {
     color: #ffd600; /* สีลิงก์เมื่อ hover */
 }
 
-.nav-list {
+.nav-list a {
     background-color: #388E3C;
+    display: flex;
+    justify-content: center;
 }
