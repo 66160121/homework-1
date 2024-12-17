@@ -1,58 +1,107 @@
-/* รีเซ็ต CSS พื้นฐาน */  
-* {  
-    margin: 0;  
-    padding: 0;  
-    box-sizing: border-box;  
-}  
+/* รีเซ็ต CSS พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body {  
-    font-family: Arial, sans-serif;  
-    line-height: 1.6;  
-}  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-header, nav, footer {  
-    background-color: #4CAF50;  
-    color: white;  
-    text-align: center;  
-    padding: 1rem;  
-}  
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
 
-nav ul {  
-    list-style: none;  
-    display: flex;  
-    justify-content: center;  
-}  
+header h1 {
+    font-size: 2rem;
+}
 
-nav ul li {  
-    margin: 0 10px;  
-}  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
 
-nav ul li a {  
-    color: white;  
-    text-decoration: none;  
-}  
-section {  
-    margin: 2rem;  
-}  
+nav ul li {
+    margin: 0 15px;
+}
 
-form {  
-    display: flex;  
-    flex-direction: column;  
-    width: 300px;  
-    margin: auto;  
-}  
-form label, form input, form textarea {  
-    margin-bottom: 1rem;  
-}  
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-button {  
-    background-color: #4CAF50;  
-    color: white;  
-    border: none;  
-    padding: 0.5rem;  
-    cursor: pointer;  
-}  
+nav ul li a:hover {
+    color: #ffeb3b;
+}
 
-button:hover {  
-    background-color: #45a049;  
-}  
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+section ul li h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+section ul li p {
+    color: #555;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
