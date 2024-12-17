@@ -22,25 +22,28 @@ header {
 }
 
 header h1 {
-    font-size: 3rem; /* ขนาดตัวอักษร */
+    font-size: 4rem; /* ขยายขนาดตัวอักษรให้ใหญ่ขึ้น */
     font-weight: bold;
-    letter-spacing: 2px; /* ระยะห่างตัวอักษร */
+    letter-spacing: 3px; /* เพิ่มระยะห่างตัวอักษร */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* เงาตัวอักษร */
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* ทำให้ตัวอักษรเป็นตัวใหญ่ทั้งหมด */
 }
 
+/* Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1.5rem; /* ระยะห่างเมนู */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    gap: 2rem; /* เพิ่มระยะห่างเมนู */
+    padding-top: 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffeb3b; /* สีลิงก์ */
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* ขยายขนาดเมนู */
     transition: color 0.3s ease;
 }
 
@@ -48,5 +51,6 @@ nav ul li a:hover {
     color: #ffd600; /* สีลิงก์เมื่อ hover */
 }
 
-/* เพิ่มฟอนต์ */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+.nav-list {
+    background-color: #388E3C;
+}
