@@ -48,3 +48,7 @@
 # git checkout -b feature/cssplaces
 # git add .
 # git commit -m "เพิ่มและแก้ไขหน้า places1"
+# git checkout main
+# git merge feature/cssplaces
+# git merge feature/places
+# git push origin
