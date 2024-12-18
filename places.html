@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>รายละเอียดสถานที่ท่องเที่ยว</title>
-  <link rel="stylesheet" href="css/styles-places.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำจังหวัดชลบุรี</title>
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="css/styles-places.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">เที่ยวบ้านเกิด</div>
-      <ul class="nav-links">
-        <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="places.html">สถานที่ท่องเที่ยว</a></li>
-        <li><a href="contact.html">ติดต่อเรา</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header class="main-header">
+        <div class="container">
+            <h1>ยินดีต้อนรับสู่จังหวัดชลบุรี</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="index.html">สถานที่ท่องเที่ยว</a></li> <!-- ลิงก์กลับไปยังหน้าแรก -->
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
 
   <!-- Main Content -->
   <section class="attractions">
@@ -77,5 +82,17 @@
   <footer>
     <p>&copy; 2024 เที่ยวบ้านเกิด. All Rights Reserved.</p>
   </footer>
+  <script>
+    function openModal(title, description, imageUrl) {
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-description').innerText = description;
+        document.getElementById('modal-image').src = imageUrl;
+        document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+</script>
 </body>
 </html>
