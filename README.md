@@ -38,3 +38,13 @@
 # git merge feature/contact
 # git merge feature/css
 # git push origin
+# git add .
+# git commit -m "ไฟล์สถานที่"
+# git checkout -b feature/places
+# git add .
+# git commit -m "เพิ่มหน้า รายละเอียด"
+# git add .
+# git commit -m "เพิ่มและแก้ไข"
+# git checkout -b feature/cssplaces
+# git add .
+# git commit -m "เพิ่มและแก้ไขหน้า places1"
